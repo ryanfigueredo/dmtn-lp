@@ -130,100 +130,81 @@ const LandingPage: React.FC = () => {
         </div>
       </div>
 
-      <div className="mt-6 flex flex-col items-center justify-center gap-4 text-center text-black">
-        {/* Título e descrição */}
-        <h1 className="text-2xl font-bold md:text-3xl">Metodologia DMTN</h1>
-        <p className="font-bold opacity-50">
-          Criamos uma abordagem própria para impulsionar e transformar negócios,
-          descomplicando desafios complexos por meio da tecnologia. Conheça a
-          Metodologia DMTN:
-        </p>
-
-        {/* Etapas */}
-        <div className="relative mt-12 flex flex-col items-start space-y-12 md:space-y-16">
-          {/* Linha tracejada */}
-          <div className="absolute left-8 top-0 h-full w-0.5 bg-gray-300"></div>
-
-          {/* Etapa 1 */}
-          <div className="relative flex items-center space-x-4 md:space-x-6">
-            <div className="flex-shrink-0">
-              <Image
-                src="/explorar.svg"
-                alt="Explorar"
-                width={80}
-                height={80}
-                className="block"
-              />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold">Explorar</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                Entendemos profundamente o seu negócio e descobrimos as
-                oportunidades de crescimento.
-              </p>
-            </div>
+      <div className="flex-col items-center justify-center pt-24">
+        <div className="flex items-center justify-center gap-10">
+          <Image
+            src="/explorar.svg"
+            alt="Explorar"
+            width={200}
+            height={200}
+            className=""
+          />
+          <Image
+            src="/arrow.png"
+            alt="Explorar"
+            width={1024}
+            height={424}
+            className="hidden h-auto w-20 sm:block md:w-80" // Classes responsivas
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center gap-10">
+          <div className="flex w-full flex-col items-center">
+            <h1 className="text-2xl font-bold md:text-3xl">Metodologia DMTN</h1>
+            <p className="font-bold opacity-50 md:w-1/4">
+              Criamos uma abordagem própria para impulsionar e transformar
+              negócios, descomplicando desafios complexos por meio da
+              tecnologia. Conheça a Metodologia DMTN:
+            </p>
           </div>
 
-          {/* Etapa 2 */}
-          <div className="relative flex items-center space-x-4 md:space-x-6">
-            <div className="flex-shrink-0">
-              <Image
-                src="/planejar.svg"
-                alt="Planejar"
-                width={80}
-                height={80}
-                className="block"
-              />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold">Planejar</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                Estruturamos soluções estratégicas com um design centrado no
-                usuário.
-              </p>
-            </div>
-          </div>
-
-          {/* Etapa 3 */}
-          <div className="relative flex items-center space-x-4 md:space-x-6">
-            <div className="flex-shrink-0">
-              <Image
-                src="/construir.svg"
-                alt="Construir"
-                width={80}
-                height={80}
-                className="block"
-              />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold">Construir</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                Desenvolvemos seu projeto com as melhores práticas e tecnologias
-                atuais.
-              </p>
-            </div>
-          </div>
-
-          {/* Etapa 4 */}
-          <div className="relative flex items-center space-x-4 md:space-x-6">
-            <div className="flex-shrink-0">
-              <Image
-                src="/lancar.svg"
-                alt="Lançar"
-                width={80}
-                height={80}
-                className="block"
-              />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold">Lançar</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                Garantimos uma entrega eficiente e segura, pronta para escalar.
-              </p>
-            </div>
+          <div className="flex items-center justify-center gap-10">
+            <Image
+              src="/planejar.svg"
+              alt="Planejar"
+              width={200}
+              height={200}
+              className=""
+            />
           </div>
         </div>
       </div>
+
+      {/* <div className="mt-6 flex flex-col items-center justify-center gap-4 text-center text-black">
+        <h3 className="text-xl font-bold">Explorar</h3>
+        <p className="mt-2 text-sm text-gray-600">
+          Entendemos profundamente o seu negócio e descobrimos as oportunidades
+          de crescimento.
+        </p>
+        <h3 className="text-xl font-bold">Construir</h3>
+        <p className="mt-2 text-sm text-gray-600">
+          Desenvolvemos seu projeto com as melhores práticas e tecnologias
+          atuais.
+        </p>
+
+        <Image
+          src="/construir.svg"
+          alt="Construir"
+          width={80}
+          height={80}
+          className="block"
+        />
+        <h3 className="text-xl font-bold">Planejar</h3>
+        <p className="mt-2 text-sm text-gray-600">
+          Estruturamos soluções estratégicas com um design centrado no usuário.
+        </p>
+        <div></div>
+        <Image
+          src="/lancar.svg"
+          alt="Lançar"
+          width={80}
+          height={80}
+          className="block"
+        />
+        <h3 className="text-xl font-bold">Lançar</h3>
+        <p className="mt-2 text-sm text-gray-600">
+          Garantimos uma entrega eficiente e segura, pronta para escalar.
+        </p>
+      </div> */}
     </div>
   );
 };
