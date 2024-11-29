@@ -9,7 +9,7 @@ const ComparisonTable = () => {
 
       <table className="w-full table-auto text-sm">
         <thead>
-          <tr className="bg-gray-800 text-white">
+          <tr className="bg-[#1D1D1D] text-white">
             <th className="text-left"></th>
             <th className="py-2 text-center">
               <div className="flex flex-col items-center">
@@ -57,7 +57,7 @@ const ComparisonTable = () => {
               key={index}
               className={`${
                 index % 2 === 0 ? "bg-[#5451A1]" : "bg-[#1D1D1D]"
-              } text-white`}
+              } font-bold text-white`}
             >
               <td className="">{row.title}</td>
               <td className="py-2 text-center">
