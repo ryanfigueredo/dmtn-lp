@@ -5,17 +5,33 @@ import { CircleCheckBig, CircleX } from "lucide-react";
 const ComparisonTable = () => {
   return (
     <div className="mx-auto w-full max-w-4xl overflow-hidden rounded-lg bg-black shadow-lg">
-      <div className="flex items-center justify-between bg-black p-4 text-white">
-        <Image
-          src="/dmtn.svg"
-          alt="DMTN Logo"
-          width={50}
-          height={50}
-          className="brightness-0 invert"
-        />
-        <p className="text-sm">Outras opções do mercado</p>
-      </div>
-      <table className="w-full table-auto">
+      {/* Cabeçalho com "DMTN" e "Outras opções" */}
+
+      <table className="w-full table-auto text-sm">
+        <thead>
+          <tr className="bg-gray-800 text-white">
+            <th className="text-left"></th>
+            <th className="py-2 text-center">
+              <div className="flex flex-col items-center">
+                <Image
+                  src="/dmtn.svg"
+                  alt="DMTN Logo"
+                  width={40}
+                  height={40}
+                  className="brightness-0 invert"
+                />
+              </div>
+            </th>
+            <th className="py-2 text-center">
+              <div className="flex flex-col items-center">
+                <p className="text-xs">
+                  Outras <br />
+                  opções
+                </p>
+              </div>
+            </th>
+          </tr>
+        </thead>
         <tbody>
           {[
             {
@@ -40,42 +56,22 @@ const ComparisonTable = () => {
             <tr
               key={index}
               className={`${
-                index % 2 === 0 ? "bg-[#5451A1]" : "bg-black"
+                index % 2 === 0 ? "bg-[#5451A1]" : "bg-[#1D1D1D]"
               } text-white`}
             >
-              <td className="px-4 py-2">{row.title}</td>
-              <td className="px-4 py-2 text-center">
+              <td className="">{row.title}</td>
+              <td className="py-2 text-center">
                 {row.dmtn ? (
-                  <Image
-                    width={20}
-                    height={20}
-                    src="checkmark.circle.fill.svg"
-                    alt="check"
-                  />
+                  <CircleCheckBig color="white" />
                 ) : (
-                  <Image
-                    width={20}
-                    height={20}
-                    src="checkmark.circle.fill.svg"
-                    alt="check"
-                  />
+                  <CircleX color="red" />
                 )}
               </td>
-              <td className="px-4 py-2 text-center">
+              <td className="py-2 text-center">
                 {row.other ? (
-                  <Image
-                    width={20}
-                    height={20}
-                    src="checkmark.circle.fill.svg"
-                    alt="check"
-                  />
+                  <CircleCheckBig color="white" />
                 ) : (
-                  <Image
-                    width={20}
-                    height={20}
-                    src="checkmark.circle.fill.svg"
-                    alt="check"
-                  />
+                  <CircleX color="red" />
                 )}
               </td>
             </tr>

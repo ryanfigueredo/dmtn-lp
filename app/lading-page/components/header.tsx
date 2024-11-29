@@ -5,13 +5,12 @@ import CustomSheetHeader from "./sheet-header";
 
 const Header = () => {
   return (
-    <div className="mb-20 flex h-12 w-full items-center justify-between rounded-full border border-solid border-[#868585] p-4 md:p-10">
+    <div className="flex h-12 w-full items-center justify-between rounded-full border border-solid border-[#868585] p-6 md:p-10">
       <div>
-        {/* Adicione classes responsivas para ajustar o tamanho */}
         <Image
-          height={40} // Altura menor para dispositivos móveis
-          width={60} // Largura menor para dispositivos móveis
-          className="md:height-[55px] md:width-[80px]" // Ajuste para telas médias ou maiores
+          height={30} // Altura menor para dispositivos móveis
+          width={50} // Largura menor para dispositivos móveis
+          className="md:h-[55px] md:w-[80px]" // Ajuste para telas médias ou maiores
           src="/dmtn.svg"
           alt="Logo"
         />

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import {
   ArrowRight,
   LayoutPanelLeft,
@@ -25,7 +24,7 @@ const ServicesSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
-          <div className="flex flex-col items-center rounded-xl bg-[#9C66FF] p-6 text-center text-white shadow-md">
+          <div className="flex flex-col items-center rounded-xl bg-[#9C66FF] p-10 text-center text-white shadow-md">
             <div className="relative flex items-center justify-center">
               <div className="absolute h-16 w-16 rounded-full bg-[#6f46bc] shadow-[0_1px_5px_rgba(0,0,0,0.25)]"></div>
               <LayoutPanelLeft className="relative z-10" />
@@ -37,7 +36,7 @@ const ServicesSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center rounded-xl bg-white p-6 text-center text-[#353232] shadow-md">
+          <div className="flex flex-col items-center rounded-xl bg-white p-10 text-center text-[#353232] shadow-md">
             <div className="relative flex items-center justify-center">
               <div className="absolute h-16 w-16 rounded-full bg-white shadow-[0_1px_5px_rgba(0,0,0,0.25)]"></div>
               <SquareMousePointer className="relative z-10" />
@@ -49,7 +48,7 @@ const ServicesSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center rounded-xl bg-white p-6 text-center text-[#353232] shadow-md">
+          <div className="flex flex-col items-center rounded-xl bg-white p-10 text-center text-[#353232] shadow-md">
             <div className="relative flex items-center justify-center">
               <div className="absolute h-16 w-16 rounded-full bg-white shadow-[0_1px_5px_rgba(0,0,0,0.25)]"></div>
               <Rss className="relative z-10" />
@@ -63,7 +62,7 @@ const ServicesSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center rounded-xl bg-white p-6 text-center text-[#353232] shadow-md">
+          <div className="flex flex-col items-center rounded-xl bg-white p-10 text-center text-[#353232] shadow-md">
             <div className="relative flex items-center justify-center">
               <div className="absolute h-16 w-16 rounded-full bg-white shadow-[0_1px_5px_rgba(0,0,0,0.25)]"></div>
               <TabletSmartphone className="relative z-10" />
@@ -77,16 +76,13 @@ const ServicesSection: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center space-y-6 text-center">
-          {/* Texto */}
           <div className="mt-4">
             <p className="mt-8 text-lg font-bold text-[#353232]">
-              Vamos te ajudar a estabelecer sua empresa através da Tecnologia,{" "}
-              <br />
+              Vamos te ajudar a estabelecer sua empresa através da Tecnologia,
               design e estratégia personalizada.
             </p>
           </div>
 
-          {/* Botão */}
           <Button>
             Marcar uma conversa <ArrowRight />
           </Button>
