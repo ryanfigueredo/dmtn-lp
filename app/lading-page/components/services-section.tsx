@@ -23,14 +23,14 @@ const ServicesSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
-          <div className="flex flex-col items-center rounded-xl bg-[#9C66FF] p-10 text-center text-white shadow-md">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="flex flex-col items-center rounded bg-[#5451A1] p-8 text-center text-white shadow-md">
             <div className="relative flex items-center justify-center">
-              <div className="absolute h-16 w-16 rounded-full bg-[#6f46bc] shadow-[0_1px_5px_rgba(0,0,0,0.25)]"></div>
+              <div className="absolute h-16 w-16 rounded-full bg-[#434173] shadow-[0_1px_5px_rgba(0,0,0,0.25)]"></div>
               <LayoutPanelLeft className="relative z-10" />
             </div>
             <h3 className="mt-8 text-lg font-bold">Criação de Aplicativos</h3>
-            <p className="mt-2 text-sm">
+            <p className="mt-2 w-96 text-sm">
               Aplicativos personalizados para iOS e Android, focados na
               experiência do usuário e alta performance.
             </p>
@@ -42,7 +42,7 @@ const ServicesSection: React.FC = () => {
               <SquareMousePointer className="relative z-10" />
             </div>
             <h3 className="mt-8 text-lg font-bold">Design UI/UX</h3>
-            <p className="mt-2 text-sm">
+            <p className="mt-2 w-96 text-sm">
               Criação de interfaces de usuário e experiências intuitivas e
               envolventes.
             </p>
@@ -56,7 +56,7 @@ const ServicesSection: React.FC = () => {
             <h3 className="mt-8 text-lg font-bold">
               Desenvolvimento de páginas web
             </h3>
-            <p className="mt-2 text-sm">
+            <p className="mt-2 w-96 text-sm">
               Modernas e responsivas, com foco na experiência do usuário e
               performance.
             </p>
@@ -68,7 +68,7 @@ const ServicesSection: React.FC = () => {
               <TabletSmartphone className="relative z-10" />
             </div>
             <h3 className="mt-8 text-lg font-bold">Gestão de Mídias Sociais</h3>
-            <p className="mt-2 text-sm">
+            <p className="mt-2 w-96 text-sm">
               Estratégias que geram engajamento e conectam sua marca ao público
               certo.
             </p>
@@ -77,7 +77,7 @@ const ServicesSection: React.FC = () => {
 
         <div className="flex flex-col items-center justify-center space-y-6 text-center">
           <div className="mt-4">
-            <p className="mt-8 text-lg font-bold text-[#353232]">
+            <p className="mt-8 text-xl font-bold text-[#353232]">
               Vamos te ajudar a estabelecer sua empresa através da Tecnologia,
               design e estratégia personalizada.
             </p>

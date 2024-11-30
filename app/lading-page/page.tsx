@@ -8,6 +8,8 @@ import ComparisonTable from "./components/comparison-table-section";
 import SectionPartners from "./components/section-partners";
 import HeaderSection from "./components/section-header";
 import MetodologiaSection from "./components/section-metodology";
+import TechSection from "./components/techs-section";
+import Footer from "./components/footer";
 
 const LandingPage: React.FC = () => {
   return (
@@ -132,6 +134,9 @@ const LandingPage: React.FC = () => {
       </div>
 
       <MetodologiaSection />
+      <TechSection />
+
+      <Footer />
     </div>
   );
 };
