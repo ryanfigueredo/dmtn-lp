@@ -125,11 +125,11 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
 
-          <h1 className="pt-4 text-2xl font-bold text-white md:text-2xl">
+          {/* <h1 className="pt-4 text-2xl font-bold text-white md:text-2xl">
             Diferente de tudo que você <br />
             ja viu no mercado:
           </h1>
-          <ComparisonTable />
+          <ComparisonTable /> */}
         </div>
       </div>
 
