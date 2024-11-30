@@ -5,7 +5,6 @@ import {
   SheetContent,
   SheetTitle,
   SheetHeader,
-  SheetDescription,
 } from "@/app/_components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";

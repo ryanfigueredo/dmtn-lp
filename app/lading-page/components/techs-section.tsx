@@ -1,5 +1,6 @@
 import { Button } from "@/app/_components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function TechSection() {
   const technologies = [
@@ -37,7 +38,9 @@ export default function TechSection() {
               key={index}
               className="relative flex h-20 w-20 flex-col items-center justify-center space-y-2 rounded-full bg-white p-4 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-100 hover:shadow-lg"
             >
-              <img
+              <Image
+                width={32}
+                height={32}
                 src={tech.logo}
                 alt={tech.name}
                 className="h-8 w-8 object-contain transition-opacity duration-300 ease-in-out hover:opacity-80"

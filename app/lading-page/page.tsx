@@ -1,10 +1,8 @@
 import React from "react";
-import { ArrowRight, ArrowUpRight, SquareCheckBig } from "lucide-react";
+import { ArrowRight, SquareCheckBig } from "lucide-react";
 import { Button } from "../_components/ui/button";
 import Header from "./components/header";
-import Image from "next/image";
 import ServicesSection from "./components/services-section";
-import ComparisonTable from "./components/comparison-table-section";
 import SectionPartners from "./components/section-partners";
 import HeaderSection from "./components/section-header";
 import MetodologiaSection from "./components/section-metodology";
